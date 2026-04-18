@@ -1,119 +1,131 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Khoi Sneaker Store</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css">
-  <title>Khoi Sneaker Store</title>
-</head>
-
-<body>
-  <header class="flex">
-    <div>
-      <a href="#">Khoi Sneaker Store</a>
-    </div>
-
-    <nav>
-      <ul class="flex menu">
-        <li><a href="ecommerce/men.html">Men</a></li>
-        <li><a href="ecommerce/women.html">Women</a></li>
-        <li><a href="ecommerce/kids.html">Kids</a></li>
-        <li><a href="ecommerce/contact.html">Contact</a></li>
-        <li><a href="ecommerce/lab.html">Lab</a></li>
-      </ul>
-    </nav>
-
-    <div>
-      <button>Search</button>
-      <a href="ecommerce/myCart.html">
-        <button>My Cart</button>
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero flex">
+  <body>
+    <header class="flex">
       <div>
-        <h1>Styles that Moves with you</h1>
-        <p>Nike is a global leader in sport, fashion and culture. Find your styles today.</p>
-        <a href="ecommerce/airJordan.html">
-          <button>Shop now</button>
+        <a href="#">Khoi Sneaker Store</a>
+      </div>
+
+      <nav>
+        <ul class="flex menu">
+          <li><a href="ecommerce/men.html">Men</a></li>
+          <li><a href="ecommerce/women.html">Women</a></li>
+          <li><a href="ecommerce/kids.html">Kids</a></li>
+          <li><a href="ecommerce/contact.html">Contact</a></li>
+          <li><a href="ecommerce/lab.html">Lab</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <button class="btn-search">Search</button>
+        <a href="ecommerce/myCart.html">
+          <button>My Cart</button>
         </a>
       </div>
+    </header>
 
-      <div>
-        <img src="images/W-AIR-MAX-90-FUTURA.avif" alt="Air Jordan shoes" width="600" height="400">
+    <main>
+      <section class="hero flex">
+        <div>
+          <h1>Styles that Moves with you</h1>
+          <p>
+            Nike is a global leader in sport, fashion and culture. Find your
+            styles today.
+          </p>
+          <a href="ecommerce/airJordan.html">
+            <button>Shop now</button>
+          </a>
+        </div>
+
+        <div>
+          <img
+            src="images/W-AIR-MAX-90-FUTURA.avif"
+            alt="Air Jordan shoes"
+            width="600"
+            height="400"
+          />
+        </div>
+      </section>
+
+      <section class="product-list">
+        <h2>Latest Shoes</h2>
+        <div class="flex">
+          <a href="#" class="product-link">
+            <article class="product-card">
+              <img src="images/AIR-JORDAN-1-LOW.avif" alt="Air Jordan 1 Low" />
+              <h3>Air Jordan 1 Low</h3>
+              <p class="category">Men's Shoes</p>
+              <p class="price">3,239,000 VND</p>
+            </article>
+          </a>
+
+          <a href="#" class="product-link">
+            <article class="product-card">
+              <img
+                src="images/AIR-JORDAN-1-LOW-G-SPK.avif"
+                alt="Air Jordan 1 Low G Spiked"
+              />
+              <h3>Air Jordan 1 Low G Spiked</h3>
+              <p class="category">Men's Shoes</p>
+              <p class="price">4,999,000 VND</p>
+            </article>
+          </a>
+
+          <a href="#" class="product-link">
+            <article class="product-card">
+              <img
+                src="images/WMNS-AIR-JORDAN-1-MID.avif"
+                alt="Air Jordan 1 Mid"
+              />
+              <h3>Air Jordan 1 Mid</h3>
+              <p class="category">Golf Shoes</p>
+              <p class="price">3,669,000 VND</p>
+            </article>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="flex div-footer">
+        <div class="flex item-footer">
+          <a class="t-footer" href="">Features</a>
+          <a href="">Air Force 1</a>
+          <a href="">Huarache</a>
+          <a href="">Air Max 90</a>
+          <a href="">Air Max 95</a>
+        </div>
+        <div class="flex item-footer">
+          <a class="t-footer" href="">Shoes</a>
+          <a href="">All Shoes</a>
+          <a href="">Custom Shoes</a>
+          <a href="">Jordan Shoes</a>
+          <a href="">Running Shoes</a>
+        </div>
+        <div class="flex item-footer">
+          <a class="t-footer" href="">Clothing</a>
+          <a href="">All Clothing</a>
+          <a href="">Modest Wear</a>
+          <a href="">Hoddies & Pullovers</a>
+          <a href="">Shirts & Tops</a>
+        </div>
+        <div class="flex item-footer">
+          <a class="t-footer" href="">Kids'</a>
+          <a href="">Infrant & Toddler Shoes</a>
+          <a href="">Kids' Shoes</a>
+          <a href="">Kids' Jordan Shoes</a>
+          <a href="">Kids' Basketball Shoes</a>
+        </div>
       </div>
-    </section>
+    </footer>
 
-    <section class="product-list">
-      <h2>Latest Shoes</h2>
-      <div class="flex">
-        <a href="#" class="product-link">
-          <article class="product-card">
-            <img src="images/AIR-JORDAN-1-LOW.avif" alt="Air Jordan 1 Low">
-            <h3>Air Jordan 1 Low</h3>
-            <p class="category">Men's Shoes</p>
-            <p class="price">3,239,000 VND</p>
-          </article>
-        </a>
-
-        <a href="#" class="product-link">
-          <article class="product-card">
-            <img src="images/AIR-JORDAN-1-LOW-G-SPK.avif" alt="Air Jordan 1 Low G Spiked">
-            <h3>Air Jordan 1 Low G Spiked</h3>
-            <p class="category">Men's Shoes</p>
-            <p class="price">4,999,000 VND</p>
-          </article>
-        </a>
-
-        <a href="#" class="product-link">
-          <article class="product-card">
-            <img src="images/WMNS-AIR-JORDAN-1-MID.avif" alt="Air Jordan 1 Mid">
-            <h3>Air Jordan 1 Mid</h3>
-            <p class="category">Golf Shoes</p>
-            <p class="price">3,669,000 VND</p>
-          </article>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="bg-footer flex">
-      <div>
-        <a href="">Features</a>
-        <a href="">Air Force 1</a>
-        <a href="">Huarache</a>
-        <a href="">Air Max 90</a>
-        <a href="">Air Max 95</a>
-      </div>
-      <div>
-        <a href="">Shoes</a>
-        <a href="">All Shoes</a>
-        <a href="">Custom Shoes</a>
-        <a href="">Jordan Shoes</a>
-        <a href="">Running Shoes</a>
-      </div>
-      <div>
-        <a href="">Clothing</a>
-        <a href="">All Clothing</a>
-        <a href="">Modest Wear</a>
-        <a href="">Hoddies & Pullovers</a>
-        <a href="">Shirts & Tops</a>
-      </div>
-      <div>
-        <a href="">Kids'</a>
-        <a href="">Infrant & Toddler Shoes</a>
-        <a href="">Kids' Shoes</a>
-        <a href="">Kids' Jordan Shoes</a>
-        <a href="">Kids' Basketball Shoes</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

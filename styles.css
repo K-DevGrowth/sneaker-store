@@ -31,6 +31,10 @@ header {
   font-weight: 600;
 }
 
+.btn-search {
+  padding-right: 20px;
+}
+
 button {
   cursor: pointer;
   background-color: transparent;
@@ -38,7 +42,7 @@ button {
 }
 
 .hero {
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 .hero div {
@@ -46,12 +50,13 @@ button {
 }
 
 .hero div h1 {
-  font-size: 75px;
+  font-size: 70px;
 }
 
 .hero div p {
   max-width: 380px;
   color: #777;
+  padding: 6px 0;
 }
 
 .hero button {
@@ -68,8 +73,12 @@ nav .menu {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
+}
+
+.product-list {
+  padding: 30px 0;
 }
 
 .product-list .flex {
@@ -109,15 +118,8 @@ section {
   border-radius: 10px;
 }
 
-.bg-footer {
-  background-color: #000;
-}
-
-.bg-footer a {
-  color: #fff;
-}
-
-.title-contact, .des-contact {
+.title-contact,
+.des-contact {
   text-align: center;
 }
 
@@ -155,6 +157,28 @@ section {
   border-radius: 10px;
 }
 
+.div-footer {
+  background-color: #000;
+  justify-content: center;
+  min-height: 250px;
+  gap: 30px;
+}
+
+.item-footer a {
+  color: #fff;
+  padding: 2px;
+}
+
+.t-footer {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item-footer.flex {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 /*  */
 .flex {
   display: flex;
@@ -181,7 +205,9 @@ section {
   flex-direction: column;
 }
 
-@media (max-width: 500px) {;
+@media (max-width: 500px) {
+  ;
+
   .menu {
     flex-direction: column;
   }
