@@ -672,6 +672,25 @@ section {
   color: #f0952e;
 }
 
+.lab-navbar {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.lab-navbar li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lab-navbar .primary-btn {
+  background-color: #111;
+}
+
+.lab-navbar .primary-btn:hover {
+  background-color: #f0952e;
+}
+
 /* Cart responsive */
 @media (max-width: 800px) {
   .cart-layout {
