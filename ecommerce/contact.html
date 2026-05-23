@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
-    <title>Khoi Sneaker Store</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Contact</title>
   </head>
-
   <body>
-    <header class="flex">
-      <div>
-        <a href="/#">Khoi Sneaker Store</a>
-      </div>
+    <header class="header flex">
+      <div class="logo"><a href="../index.html">Khoi Sneaker Store</a></div>
 
       <nav>
         <ul class="flex menu">
@@ -23,83 +20,57 @@
         </ul>
       </nav>
 
-      <div>
-        <button>Search</button>
-        <a href="myCart.html">
-          <button>My Cart</button>
-        </a>
+      <div class="header-actions">
+        <button class="cart-btn" id="openCart">
+          My Cart <span id="cartCount">0</span>
+        </button>
       </div>
     </header>
 
     <main>
-      <section class="product-list">
+      <section class="contact-form">
         <h1 class="title-contact">Contact Us</h1>
-        <p class="des-contact">
-          If you have any questions or need assistance, please feel free to
-          contact us:
-        </p>
-        <form class="contact-form">
-          <div class="flex">
-            <label for="name">Name:</label>
-            <input id="name" type="text" />
+        <p class="des-contact">Send us a message if you need support.</p>
+
+        <form>
+          <div class="flex-2">
+            <div>
+              <label>Name</label>
+              <input type="text" placeholder="Your name" />
+            </div>
+
+            <div>
+              <label>Email</label>
+              <input type="email" placeholder="Your email" />
+            </div>
           </div>
 
-          <div class="flex">
-            <label for="phone-number">Phone number:</label>
-            <input id="phone-number" type="number" />
+          <div>
+            <label>Message</label>
+            <textarea placeholder="Your message"></textarea>
           </div>
 
-          <div class="flex">
-            <label for="email">Email: </label>
-            <input id="email" type="email" />
-          </div>
-
-          <div class="flex">
-            <label for="title">Title: </label>
-            <input id="title" type="text" />
-          </div>
-
-          <div class="flex">
-            <label for="other">Other: </label>
-            <textarea name="other" id="other"></textarea>
-          </div>
-
-          <button type="submit">Send messages</button>
+          <button type="submit">Send Message</button>
         </form>
       </section>
     </main>
 
-    <footer>
-      <div class="flex div-footer">
-        <div class="flex item-footer">
-          <a class="t-footer" href="">Features</a>
-          <a href="">Air Force 1</a>
-          <a href="">Huarache</a>
-          <a href="">Air Max 90</a>
-          <a href="">Air Max 95</a>
-        </div>
-        <div class="flex item-footer">
-          <a class="t-footer" href="">Shoes</a>
-          <a href="">All Shoes</a>
-          <a href="">Custom Shoes</a>
-          <a href="">Jordan Shoes</a>
-          <a href="">Running Shoes</a>
-        </div>
-        <div class="flex item-footer">
-          <a class="t-footer" href="">Clothing</a>
-          <a href="">All Clothing</a>
-          <a href="">Modest Wear</a>
-          <a href="">Hoddies & Pullovers</a>
-          <a href="">Shirts & Tops</a>
-        </div>
-        <div class="flex item-footer">
-          <a class="t-footer" href="">Kids'</a>
-          <a href="">Infrant & Toddler Shoes</a>
-          <a href="">Kids' Shoes</a>
-          <a href="">Kids' Jordan Shoes</a>
-          <a href="">Kids' Basketball Shoes</a>
-        </div>
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="cart-header flex">
+        <h2>Your Cart</h2>
+        <button id="closeCart">×</button>
       </div>
-    </footer>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-footer">
+        <p>Total: <strong id="cartTotal">0 VND</strong></p>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="../script.js"></script>
   </body>
 </html>

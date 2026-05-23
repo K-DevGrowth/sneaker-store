@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
-    <title>Khoi Sneaker Store</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Lab</title>
   </head>
-
   <body>
-    <header class="flex">
-      <div>
-        <a href="/#">Khoi Sneaker Store</a>
-      </div>
+    <header class="header flex">
+      <div class="logo"><a href="../index.html">Khoi Sneaker Store</a></div>
 
       <nav>
         <ul class="flex menu">
@@ -23,49 +20,23 @@
         </ul>
       </nav>
 
-      <div>
-        <button>Search</button>
-        <a href="myCart.html">
-          <button>My Cart</button>
-        </a>
+      <div class="header-actions">
+        <button class="btn-search" id="openSearch">Search</button>
+        <button class="cart-btn" id="openCart">
+          My Cart <span id="cartCount">0</span>
+        </button>
       </div>
     </header>
 
     <main>
-      <section class="product-list"></section>
-    </main>
+      <section class="hero">
+        <div>
+          <p class="tagline">Lab</p>
+          <h1>Lab thực hành</h1>
 
-    <footer>
-      <div class="flex div-footer">
-        <div class="flex item-footer">
-          <a class="t-footer" href="">Features</a>
-          <a href="">Air Force 1</a>
-          <a href="">Huarache</a>
-          <a href="">Air Max 90</a>
-          <a href="">Air Max 95</a>
+          <button class="primary-btn">Start Customizing</button>
         </div>
-        <div class="flex item-footer">
-          <a class="t-footer" href="">Shoes</a>
-          <a href="">All Shoes</a>
-          <a href="">Custom Shoes</a>
-          <a href="">Jordan Shoes</a>
-          <a href="">Running Shoes</a>
-        </div>
-        <div class="flex item-footer">
-          <a class="t-footer" href="">Clothing</a>
-          <a href="">All Clothing</a>
-          <a href="">Modest Wear</a>
-          <a href="">Hoddies & Pullovers</a>
-          <a href="">Shirts & Tops</a>
-        </div>
-        <div class="flex item-footer">
-          <a class="t-footer" href="">Kids'</a>
-          <a href="">Infrant & Toddler Shoes</a>
-          <a href="">Kids' Shoes</a>
-          <a href="">Kids' Jordan Shoes</a>
-          <a href="">Kids' Basketball Shoes</a>
-        </div>
-      </div>
-    </footer>
+      </section>
+    </main>
   </body>
 </html>

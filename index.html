@@ -8,12 +8,14 @@
   </head>
 
   <body>
-    <header class="flex">
-      <div>
+    <header class="header flex">
+      <div class="logo">
         <a href="#">Khoi Sneaker Store</a>
       </div>
 
-      <nav>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav id="navbar">
         <ul class="flex menu">
           <li><a href="ecommerce/men.html">Men</a></li>
           <li><a href="ecommerce/women.html">Women</a></li>
@@ -23,28 +25,26 @@
         </ul>
       </nav>
 
-      <div>
-        <button class="btn-search">Search</button>
-        <a href="ecommerce/myCart.html">
-          <button>My Cart</button>
-        </a>
+      <div class="header-actions">
+        <button class="cart-btn" id="openCart">
+          My Cart <span id="cartCount">0</span>
+        </button>
       </div>
     </header>
 
     <main>
       <section class="hero flex">
-        <div>
-          <h1>Styles that Moves with you</h1>
+        <div class="hero-content">
+          <p class="tagline">New Collection 2026</p>
+          <h1>Styles that Move with You</h1>
           <p>
             Nike is a global leader in sport, fashion and culture. Find your
             styles today.
           </p>
-          <a href="ecommerce/airJordan.html">
-            <button>Shop now</button>
-          </a>
+          <button class="primary-btn">Shop now</button>
         </div>
 
-        <div>
+        <div class="hero-image">
           <img
             src="images/W-AIR-MAX-90-FUTURA.avif"
             alt="Air Jordan shoes"
@@ -54,78 +54,173 @@
         </div>
       </section>
 
+      <section class="features">
+        <div>
+          <h3>Free Shipping</h3>
+          <p>For orders over 2,000,000 VND</p>
+        </div>
+        <div>
+          <h3>Authentic Shoes</h3>
+          <p>100% genuine sneaker products</p>
+        </div>
+        <div>
+          <h3>Easy Return</h3>
+          <p>Return within 7 days</p>
+        </div>
+      </section>
+
       <section class="product-list">
-        <h2>Latest Shoes</h2>
-        <div class="flex">
-          <a href="#" class="product-link">
-            <article class="product-card">
-              <img src="images/AIR-JORDAN-1-LOW.avif" alt="Air Jordan 1 Low" />
+        <div class="section-heading flex">
+          <div>
+            <p class="tagline">Top Picks</p>
+            <h2>Latest Shoes</h2>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article
+            class="product-card"
+            data-name="Air Jordan 1 Low"
+            data-category="Men"
+            data-price="3239000"
+          >
+            <img src="images/AIR-JORDAN-1-LOW.avif" alt="Air Jordan 1 Low" />
+            <div class="product-info">
+              <p class="badge">Best Seller</p>
               <h3>Air Jordan 1 Low</h3>
               <p class="category">Men's Shoes</p>
               <p class="price">3,239,000 VND</p>
-            </article>
-          </a>
+              <button class="add-cart-btn">Add to Cart</button>
+            </div>
+          </article>
 
-          <a href="#" class="product-link">
-            <article class="product-card">
-              <img
-                src="images/AIR-JORDAN-1-LOW-G-SPK.avif"
-                alt="Air Jordan 1 Low G Spiked"
-              />
-              <h3>Air Jordan 1 Low G Spiked</h3>
-              <p class="category">Men's Shoes</p>
-              <p class="price">4,999,000 VND</p>
-            </article>
-          </a>
+          <article
+            class="product-card"
+            data-name="Air Jordan 1 Low Alt"
+            data-category="Kids"
+            data-price="1999999"
+          >
+            <img
+              src="images/JORDAN+1+LOW+ALT.avif"
+              alt="Air Jordan 1 Low Alt"
+            />
+            <div class="product-info">
+              <p class="badge">New</p>
+              <h3>Air Jordan 1 Low G Alt</h3>
+              <p class="category">Kids' Shoes</p>
+              <p class="price">1,999,999 VND</p>
+              <button class="add-cart-btn">Add to Cart</button>
+            </div>
+          </article>
 
-          <a href="#" class="product-link">
-            <article class="product-card">
-              <img
-                src="images/WMNS-AIR-JORDAN-1-MID.avif"
-                alt="Air Jordan 1 Mid"
-              />
+          <article
+            class="product-card"
+            data-name="Air Jordan 1 Mid"
+            data-category="Women"
+            data-price="3669000"
+          >
+            <img
+              src="images/WMNS-AIR-JORDAN-1-MID.avif"
+              alt="Air Jordan 1 Mid"
+            />
+            <div class="product-info">
+              <p class="badge">Hot</p>
               <h3>Air Jordan 1 Mid</h3>
-              <p class="category">Golf Shoes</p>
+              <p class="category">Women's Shoes</p>
               <p class="price">3,669,000 VND</p>
-            </article>
-          </a>
+              <button class="add-cart-btn">Add to Cart</button>
+            </div>
+          </article>
+
+          <article
+            class="product-card"
+            data-name="Nike Air Max 90 Futura"
+            data-category="Women"
+            data-price="4100000"
+          >
+            <img
+              src="images/W-AIR-MAX-90-FUTURA.avif"
+              alt="Nike Air Max 90 Futura"
+            />
+            <div class="product-info">
+              <p class="badge">Limited</p>
+              <h3>Nike Air Max 90 Futura</h3>
+              <p class="category">Women's Shoes</p>
+              <p class="price">4,100,000 VND</p>
+              <button class="add-cart-btn">Add to Cart</button>
+            </div>
+          </article>
         </div>
       </section>
+
+      <section class="newsletter">
+        <h2>Join Our Sneaker Club</h2>
+        <p>Get news about new releases, discounts and sneaker drops.</p>
+
+        <form id="newsletterForm">
+          <input type="email" id="emailInput" placeholder="Enter your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <p id="newsletterMessage"></p>
+      </section>
     </main>
+
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="cart-header flex">
+        <h2>Your Cart</h2>
+        <button id="closeCart">×</button>
+      </div>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-footer">
+        <p>Total: <strong id="cartTotal">0 VND</strong></p>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
 
     <footer>
       <div class="flex div-footer">
         <div class="flex item-footer">
-          <a class="t-footer" href="">Features</a>
-          <a href="">Air Force 1</a>
-          <a href="">Huarache</a>
-          <a href="">Air Max 90</a>
-          <a href="">Air Max 95</a>
+          <a class="t-footer" href="#">Features</a>
+          <a href="#">Air Force 1</a>
+          <a href="#">Huarache</a>
+          <a href="#">Air Max 90</a>
+          <a href="#">Air Max 95</a>
         </div>
+
         <div class="flex item-footer">
-          <a class="t-footer" href="">Shoes</a>
-          <a href="">All Shoes</a>
-          <a href="">Custom Shoes</a>
-          <a href="">Jordan Shoes</a>
-          <a href="">Running Shoes</a>
+          <a class="t-footer" href="#">Shoes</a>
+          <a href="#">All Shoes</a>
+          <a href="#">Custom Shoes</a>
+          <a href="#">Jordan Shoes</a>
+          <a href="#">Running Shoes</a>
         </div>
+
         <div class="flex item-footer">
-          <a class="t-footer" href="">Clothing</a>
-          <a href="">All Clothing</a>
-          <a href="">Modest Wear</a>
-          <a href="">Hoddies & Pullovers</a>
-          <a href="">Shirts & Tops</a>
+          <a class="t-footer" href="#">Clothing</a>
+          <a href="#">All Clothing</a>
+          <a href="#">Modest Wear</a>
+          <a href="#">Hoodies & Pullovers</a>
+          <a href="#">Shirts & Tops</a>
         </div>
+
         <div class="flex item-footer">
-          <a class="t-footer" href="">Kids'</a>
-          <a href="">Infrant & Toddler Shoes</a>
-          <a href="">Kids' Shoes</a>
-          <a href="">Kids' Jordan Shoes</a>
-          <a href="">Kids' Basketball Shoes</a>
+          <a class="t-footer" href="#">Kids'</a>
+          <a href="#">Infant & Toddler Shoes</a>
+          <a href="#">Kids' Shoes</a>
+          <a href="#">Kids' Jordan Shoes</a>
+          <a href="#">Kids' Basketball Shoes</a>
         </div>
       </div>
+
+      <p class="copyright">© 2026 Khoi Sneaker Store. All rights reserved.</p>
     </footer>
 
+    <script src="data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
